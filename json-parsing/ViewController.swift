@@ -12,9 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let event : Event = DataMapper.instance.getElement(withId: 8)!
-        let place : Place = DataMapper.instance.getElement(withId: 9)!
-        let category : Category = DataMapper.instance.getElement(withId: 1)!
+        let event : Event = try! DataMapper.instance.getElement(withId: 8)!
+        let place : Place = try! DataMapper.instance.getElement(withId: 9)!
+        let category : Category = try! DataMapper.instance.getElement(withId: 9)!
         print(category)
     }
 

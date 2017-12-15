@@ -7,7 +7,7 @@ import Foundation
 import Pluralize_swift
 
 enum DataMapperError: Error {
-    case errorReadingFile
+    case errorReadingFile, elementNotFound
 }
 
 class DataMapper {
@@ -45,14 +45,15 @@ class DataMapper {
         }
     }
 
-    func getElement<T: IdProtocol>(withId id: Int) -> T? {
+    func getElement<T: IdProtocol>(withId id: Int) throws -> T? {
         let filename = "\(String(describing: T.self).lowercased())".pluralize()
         guard let filePath = Bundle.main.url(forResource: filename, withExtension: "json") else { return nil }
         let data = try! Data(contentsOf: filePath)
         let elements = try! JSONDecoder().decode([T].self, from: data)
-        return elements.filter({ (element) in
-            return element.id == id
-        }).first
+        guard let results = elements.filter({ (element) in
+                                    return element.id == id
+                                    }).first else { throw DataMapperError.elementNotFound }
+        return results
     }
 
 }
