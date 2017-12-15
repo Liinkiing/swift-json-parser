@@ -23,3 +23,6 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+
+# Pods (see https://guides.cocoapods.org/using/using-cocoapods.html to decide whether or not you should version your pods, personnally, I like to keep my repo as simple as possible)
+Pods/

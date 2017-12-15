@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let event : Event = DataMapper.instance.getElement(withId: 8)!
         let place : Place = DataMapper.instance.getElement(withId: 9)!
-        print(place)
+        let category : Category = DataMapper.instance.getElement(withId: 1)!
+        print(category)
     }
 
     override func didReceiveMemoryWarning() {

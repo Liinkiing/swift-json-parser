@@ -1,0 +1,21 @@
+PODS:
+  - Pluralize.swift (1.0)
+
+DEPENDENCIES:
+  - Pluralize.swift (from `https://github.com/Liinkiing/Pluralize.swift`)
+
+EXTERNAL SOURCES:
+  Pluralize.swift:
+    :git: https://github.com/Liinkiing/Pluralize.swift
+
+CHECKOUT OPTIONS:
+  Pluralize.swift:
+    :commit: da82d6a267e10f270613eb20aca3405c128803d9
+    :git: https://github.com/Liinkiing/Pluralize.swift
+
+SPEC CHECKSUMS:
+  Pluralize.swift: 39197053939578ca42c3034081d2887016ce5a33
+
+PODFILE CHECKSUM: 56e8120448239ebae0515de1e191aceedc128b0c
+
+COCOAPODS: 1.3.1
