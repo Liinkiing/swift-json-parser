@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UICollectionViewDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let event : Event = try! DataMapper.instance.getElement(withId: 8)!
-        let place : Place = try! DataMapper.instance.getElement(withId: 9)!
-        let category : Category = try! DataMapper.instance.getElement(withId: 9)!
-        print(category)
+        let event : Event = DataMapper.instance.getElement(withId: 8)!
+        let place : Place = DataMapper.instance.getElement(withId: 9)!
+        let category : Category = DataMapper.instance.getElement(withId: 1)!
+        print(event)
     }
 
     override func didReceiveMemoryWarning() {
