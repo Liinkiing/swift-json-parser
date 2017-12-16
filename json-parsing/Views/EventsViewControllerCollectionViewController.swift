@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class EventsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     private let reuseIdentifier = "EventCell"
@@ -35,6 +36,8 @@ class EventsViewController: UICollectionViewController, UICollectionViewDelegate
         let event = events[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! EventsCollectionViewCell
         cell.imageView.image = event.getUIImage()
+        cell.labelTitle.text = event.name
+        cell.labelDate.text = "Commence le \(event.startingDate.getDate(withFormat: "dd MMM YYYY, à H:mm"))"
         return cell
     }
 

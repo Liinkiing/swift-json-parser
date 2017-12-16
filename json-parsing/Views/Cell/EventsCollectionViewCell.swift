@@ -8,8 +8,12 @@
 
 import UIKit
 
+@IBDesignable
 class EventsCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
+
+    @IBOutlet weak var imageView: DesignableImageView!
+    @IBOutlet weak var labelTitle: DesignableLabel!
+    @IBOutlet weak var labelDate: DesignableLabel!
     
 }

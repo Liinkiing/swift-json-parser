@@ -34,7 +34,7 @@
     "id": 2,
     "name": "Salon des nouvelles écritures",
     "excerpt": "Et projections (boucle de 20min) ou démos en continu",
-    "image": "default",
+    "image": "second",
     "places": [
       {
         "id": 5,
@@ -101,7 +101,7 @@
     "id": 4,
     "name": "Les courts n°5",
     "excerpt": "",
-    "image": "default",
+    "image": "second",
     "places": [
       {
         "id": 1,
@@ -225,7 +225,7 @@
     "id": 8,
     "name": "Cocktail",
     "excerpt": "",
-    "image": "default",
+    "image": "second",
     "places": [
       {
         "id": 4,
@@ -287,7 +287,7 @@
     "id": 10,
     "name": "Soirée",
     "excerpt": "",
-    "image": "default",
+    "image": "third",
     "places": [
       {
         "id": 4,
@@ -411,7 +411,7 @@
     "id": 14,
     "name": "Salon des nouvelles écritures",
     "excerpt": "Et projections (boucle de 20min) ou démos en continu",
-    "image": "default",
+    "image": "third",
     "places": [
       {
         "id": 5,
@@ -478,7 +478,7 @@
     "id": 16,
     "name": "Cantine professionnelle",
     "excerpt": "",
-    "image": "default",
+    "image": "second",
     "places": [
       {
         "id": 4,
@@ -602,7 +602,7 @@
     "id": 20,
     "name": "Atelier TV paint",
     "excerpt": "(scolaire)",
-    "image": "default",
+    "image": "second",
     "places": [
       {
         "id": 3,
@@ -726,7 +726,7 @@
     "id": 24,
     "name": "Rencontre avec les réalisateurs",
     "excerpt": "",
-    "image": "default",
+    "image": "third",
     "places": [
       {
         "id": 3,
@@ -819,7 +819,7 @@
     "id": 27,
     "name": "Mutafukaz",
     "excerpt": "",
-    "image": "default",
+    "image": "first",
     "places": [
       {
         "id": 7,
@@ -850,7 +850,7 @@
     "id": 28,
     "name": "Soirée",
     "excerpt": "",
-    "image": "default",
+    "image": "second",
     "places": [
       {
         "id": 7,
@@ -943,7 +943,7 @@
     "id": 31,
     "name": "Les courts n°2",
     "excerpt": "",
-    "image": "default",
+    "image": "first",
     "places": [
       {
         "id": 7,
@@ -1041,7 +1041,7 @@
     "id": 34,
     "name": "La Fée spéciale",
     "excerpt": "",
-    "image": "default",
+    "image": "second",
     "places": [
       {
         "id": 2,
@@ -1103,7 +1103,7 @@
     "id": 36,
     "name": "Cantine professionnelle",
     "excerpt": "",
-    "image": "default",
+    "image": "first",
     "places": [
       {
         "id": 4,
@@ -1165,7 +1165,7 @@
     "id": 38,
     "name": "Les courts n°1",
     "excerpt": "",
-    "image": "default",
+    "image": "first",
     "places": [
       {
         "id": 7,
@@ -1289,7 +1289,7 @@
     "id": 42,
     "name": "L'appel de Folimage",
     "excerpt": "",
-    "image": "default",
+    "image": "first",
     "places": [
       {
         "id": 2,
@@ -1382,7 +1382,7 @@
     "id": 45,
     "name": "Les courts n°7",
     "excerpt": "",
-    "image": "default",
+    "image": "third",
     "places": [
       {
         "id": 2,
@@ -1444,7 +1444,7 @@
     "id": 47,
     "name": "Soirée V J-ing",
     "excerpt": "",
-    "image": "default",
+    "image": "first",
     "places": [
       {
         "id": 4,
@@ -1883,7 +1883,7 @@
     "id": 61,
     "name": "Séries Jeune public",
     "excerpt": "",
-    "image": "default",
+    "image": "third",
     "places": [
       {
         "id": 7,
@@ -2012,7 +2012,7 @@
     "id": 65,
     "name": "Séance petite enfance",
     "excerpt": "3 ans",
-    "image": "default",
+    "image": "third",
     "places": [
       {
         "id": 2,
@@ -2043,7 +2043,7 @@
     "id": 66,
     "name": "Doc en stock « Un homme est mort »",
     "excerpt": "",
-    "image": "default",
+    "image": "third",
     "places": [
       {
         "id": 9,
@@ -2074,7 +2074,7 @@
     "id": 67,
     "name": "Ciné - concert",
     "excerpt": "",
-    "image": "default",
+    "image": "second",
     "places": [
       {
         "id": 1,
