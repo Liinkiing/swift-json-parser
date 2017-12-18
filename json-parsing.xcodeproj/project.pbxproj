@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		029F46700624AD72D8AFEA88 /* Pods_json_parsing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECA736726C2A1E169836BF1 /* Pods_json_parsing.framework */; };
+		AF12EEE11FE7D88800C411BB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF12EEE01FE7D88800C411BB /* DetailViewController.swift */; };
 		AF181EF71FE300370082829A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF181EF61FE300370082829A /* AppDelegate.swift */; };
 		AF181EF91FE300370082829A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF181EF81FE300370082829A /* ViewController.swift */; };
 		AF181EFC1FE300370082829A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF181EFA1FE300370082829A /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		112084FF2AD4954FFACA8439 /* Pods-json-parsing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-json-parsing.release.xcconfig"; path = "Pods/Target Support Files/Pods-json-parsing/Pods-json-parsing.release.xcconfig"; sourceTree = "<group>"; };
 		569E4E97102CD7F941BC841F /* Pods-json-parsing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-json-parsing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-json-parsing/Pods-json-parsing.debug.xcconfig"; sourceTree = "<group>"; };
+		AF12EEE01FE7D88800C411BB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AF181EF31FE300370082829A /* json-parsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "json-parsing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF181EF61FE300370082829A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF181EF81FE300370082829A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				AF25194F1FE58EFA004114E1 /* EventsViewControllerCollectionViewController.swift */,
 				FBD91E906B0C407FB4266D5A /* Cell */,
+				AF12EEE01FE7D88800C411BB /* DetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF12EEE11FE7D88800C411BB /* DetailViewController.swift in Sources */,
 				AFBD24741FE30BE70001836E /* Event.swift in Sources */,
 				AF5054401FE308B400342FB5 /* Place.swift in Sources */,
 				AF2519501FE58EFA004114E1 /* EventsViewControllerCollectionViewController.swift in Sources */,

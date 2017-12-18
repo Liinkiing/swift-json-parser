@@ -33,6 +33,7 @@ class EventsViewController: UICollectionViewController, UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! EventsCollectionViewCell
         guard let event = events?[indexPath.row] else { return cell }
+        cell.eventId = event.id
         cell.imageView.image = event.getUIImage()
         cell.labelTitle.text = event.name
         cell.labelDate.text = "Commence le \(event.startingDate.getDate(withFormat: "dd MMM YYYY, à H:mm"))"
@@ -68,8 +69,20 @@ class EventsViewController: UICollectionViewController, UICollectionViewDelegate
         }
         collectionView?.reloadData()
     }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detail", sender: collectionView.cellForItem(at: indexPath))
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "detail") {
+            let cell = sender as! EventsCollectionViewCell
+            let to = segue.destination as! DetailViewController
+            let indexPath = collectionView!.indexPath(for: cell)
+            let event: Event = DataMapper.instance.getElement(withId: cell.eventId!)!
+            to.event = event
+        }
+    }
 }
 
 

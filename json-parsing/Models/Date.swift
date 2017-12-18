@@ -25,6 +25,5 @@ struct Date: Decodable {
         formatter.locale = locale
         formatter.setLocalizedDateFormatFromTemplate(format)
         return formatter.string(from: getDate())
-
     }
 }

@@ -10,7 +10,8 @@ import UIKit
 
 @IBDesignable
 class EventsCollectionViewCell: UICollectionViewCell {
-    
+
+    var eventId: Int?
 
     @IBOutlet weak var imageView: DesignableImageView!
     @IBOutlet weak var labelTitle: DesignableLabel!
