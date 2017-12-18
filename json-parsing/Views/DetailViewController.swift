@@ -11,10 +11,14 @@ import UIKit
 class DetailViewController: UIViewController {
 
     var event: Event?
-
+    @IBOutlet weak var imageView: UIImageView?
+    @IBOutlet weak var labelExcerpt: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = event!.name
+        imageView?.image = event?.getUIImage()
+        labelExcerpt.text = event?.excerpt
         // Do any additional setup after loading the view.
     }
 

@@ -6,7 +6,6 @@
 import Foundation
 import Pluralize_swift
 
-
 enum DataMapperError: Error {
     case errorReadingFile, elementNotFound
 }
@@ -14,6 +13,8 @@ enum DataMapperError: Error {
 class DataMapper {
 
     static let instance = DataMapper()
+    let userDefaults = UserDefaults.standard
+    let FAVORITES_KEY_USER = "favorites"
 
     private init() {
     }
@@ -55,6 +56,16 @@ class DataMapper {
                                     return element.id == id
                                     }).first else { return nil }
         return results
+    }
+
+    func getSavedFavorites() -> [Event] {
+        guard let data = userDefaults.data(forKey: FAVORITES_KEY_USER) else { return [] }
+        return NSKeyedUnarchiver.unarchiveObject(with: data) as! [Event]
+    }
+
+    func save(favorites: [Event]) {
+        let placeData = NSKeyedArchiver.archivedData(withRootObject: favorites)
+        userDefaults.set(placeData, forKey: FAVORITES_KEY_USER)
     }
 
 }

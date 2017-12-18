@@ -12,7 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let themeColor = #colorLiteral(red: 1, green: 0.4282544896, blue: 0.422259417, alpha: 1)
-    
 
     var window: UIWindow?
 

@@ -14,6 +14,7 @@ class EventsCollectionViewCell: UICollectionViewCell {
     var eventId: Int?
 
     @IBOutlet weak var imageView: DesignableImageView!
+    @IBOutlet weak var favButton: UIButton!
     @IBOutlet weak var labelTitle: DesignableLabel!
     @IBOutlet weak var labelDate: DesignableLabel!
     

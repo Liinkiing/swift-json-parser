@@ -12,11 +12,11 @@
 		AF181EF71FE300370082829A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF181EF61FE300370082829A /* AppDelegate.swift */; };
 		AF181EF91FE300370082829A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF181EF81FE300370082829A /* ViewController.swift */; };
 		AF181EFC1FE300370082829A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF181EFA1FE300370082829A /* Main.storyboard */; };
-		AF181EFE1FE300370082829A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF181EFD1FE300370082829A /* Assets.xcassets */; };
 		AF181F011FE300370082829A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF181EFF1FE300370082829A /* LaunchScreen.storyboard */; };
 		AF2519501FE58EFA004114E1 /* EventsViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF25194F1FE58EFA004114E1 /* EventsViewControllerCollectionViewController.swift */; };
 		AF2519521FE59BA8004114E1 /* EventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2519511FE59BA8004114E1 /* EventsCollectionViewCell.swift */; };
 		AF5054401FE308B400342FB5 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50543F1FE308B400342FB5 /* Place.swift */; };
+		AF6F1E841FE7FF160006AA02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6F1E831FE7FF160006AA02 /* Images.xcassets */; };
 		AFBD24741FE30BE70001836E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD24731FE30BE70001836E /* Event.swift */; };
 		FBD9110D2B179001CAE5574D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD91E48327610AA704263A7 /* Extensions.swift */; };
 		FBD91218CBFFF79976831639 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = FBD917856AC2FF4C1D6F4CF0 /* events.json */; };
@@ -38,12 +38,12 @@
 		AF181EF61FE300370082829A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF181EF81FE300370082829A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF181EFB1FE300370082829A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF181EFD1FE300370082829A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF181F001FE300370082829A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF181F021FE300370082829A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF25194F1FE58EFA004114E1 /* EventsViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		AF2519511FE59BA8004114E1 /* EventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF50543F1FE308B400342FB5 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		AF6F1E831FE7FF160006AA02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AFBD24731FE30BE70001836E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		EECA736726C2A1E169836BF1 /* Pods_json_parsing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_json_parsing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD9110FEA8631AA6BED524F /* NameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameProtocol.swift; sourceTree = "<group>"; };
@@ -113,8 +113,8 @@
 				AF181EF61FE300370082829A /* AppDelegate.swift */,
 				AF181EF81FE300370082829A /* ViewController.swift */,
 				AF181EFA1FE300370082829A /* Main.storyboard */,
-				AF181EFD1FE300370082829A /* Assets.xcassets */,
 				AF181EFF1FE300370082829A /* LaunchScreen.storyboard */,
+				AF6F1E831FE7FF160006AA02 /* Images.xcassets */,
 				AF181F021FE300370082829A /* Info.plist */,
 				FBD917131A11A97DB872CFDE /* Data */,
 				FBD91E54001713B978D83D34 /* Views */,
@@ -228,8 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF181F011FE300370082829A /* LaunchScreen.storyboard in Resources */,
-				AF181EFE1FE300370082829A /* Assets.xcassets in Resources */,
 				AF181EFC1FE300370082829A /* Main.storyboard in Resources */,
+				AF6F1E841FE7FF160006AA02 /* Images.xcassets in Resources */,
 				FBD91218CBFFF79976831639 /* events.json in Resources */,
 				FBD91BD164EDED7FA5508FC5 /* places.json in Resources */,
 				FBD918DF3EB01C5FF9B56A93 /* categories.json in Resources */,
