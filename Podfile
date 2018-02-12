@@ -9,5 +9,6 @@ target 'json-parsing' do
 
   # Pods for json-parsing
   pod 'Pluralize.swift', :git => 'https://github.com/Liinkiing/Pluralize.swift'
+  pod "UPCarouselFlowLayout"
 
 end

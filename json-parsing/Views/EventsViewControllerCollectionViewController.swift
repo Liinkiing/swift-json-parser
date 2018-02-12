@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UPCarouselFlowLayout
 
 @IBDesignable
 class EventsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UITextFieldDelegate {
@@ -36,6 +37,22 @@ class EventsViewController: UICollectionViewController, UICollectionViewDelegate
         return events?.count ?? 0
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow
+        let width = self.view.frame.size.width;
+        return CGSize(width: width-40, height: widthPerItem)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 40
+    }
+
     @IBAction func tapFav(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         let currentCell = collectionView?.cellForItem(at: IndexPath(row: sender.tag, section: 0)) as! EventsCollectionViewCell
@@ -62,22 +79,6 @@ class EventsViewController: UICollectionViewController, UICollectionViewDelegate
         cell.labelTitle.text = event.name
         cell.labelDate.text = "Commence le \(event.startingDate.getDate(withFormat: "dd MMM YYYY, à H:mm"))"
         return cell
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-        let availableWidth = view.frame.width - paddingSpace
-        let widthPerItem = availableWidth / itemsPerRow
-
-        return CGSize(width: widthPerItem, height: widthPerItem)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return sectionInsets
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return sectionInsets.left
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

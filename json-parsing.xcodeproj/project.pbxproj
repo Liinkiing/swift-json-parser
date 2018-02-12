@@ -281,10 +281,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-json-parsing/Pods-json-parsing-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Pluralize.swift/Pluralize_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/UPCarouselFlowLayout/UPCarouselFlowLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pluralize_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UPCarouselFlowLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

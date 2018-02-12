@@ -1,5 +1,6 @@
 # Worskpace settings for AppCode
 .idea/
+.DS_STORE
 
 # Xcode
 #
